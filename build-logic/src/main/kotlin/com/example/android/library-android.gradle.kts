@@ -3,11 +3,11 @@ plugins {
     id("com.google.dagger.hilt.android")
     id("org.jlleitschuh.gradle.ktlint")
     kotlin("android")
-    kotlin("kapt")
+    id("com.google.devtools.ksp")
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -39,5 +39,5 @@ android {
 dependencies {
     val hiltVersion = "2.49"
     implementation("com.google.dagger:hilt-android:$hiltVersion")
-    kapt("com.google.dagger:hilt-compiler:$hiltVersion")
+    ksp("com.google.dagger:hilt-compiler:$hiltVersion")
 }
