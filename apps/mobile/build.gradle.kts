@@ -27,4 +27,5 @@ dependencies {
     implementation(libs.lifecycle.runtime.ktx)
 
     implementation(libs.activity.compose)
+    implementation(libs.navigation.compose)
 }
