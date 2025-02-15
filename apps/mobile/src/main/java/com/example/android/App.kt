@@ -8,8 +8,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.android.features.featureone.ui.FeatureOneRoute
 import com.example.android.features.featureone.ui.FeatureOneScreen
-import com.example.android.features.featureone.ui.ROUTE_FEATURE_ONE
 
 @Composable
 fun App(modifier: Modifier = Modifier) {
@@ -21,9 +21,9 @@ fun App(modifier: Modifier = Modifier) {
     ) {
         NavHost(
             navController = navController,
-            startDestination = ROUTE_FEATURE_ONE,
+            startDestination = FeatureOneRoute,
         ) {
-            composable(ROUTE_FEATURE_ONE) {
+            composable<FeatureOneRoute> {
                 FeatureOneScreen(
                     viewModel = hiltViewModel(),
                 )

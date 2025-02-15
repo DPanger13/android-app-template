@@ -8,8 +8,6 @@ import com.example.android.features.featureone.viewmodel.ItemsUiState
 import com.example.android.ui.components.error.ErrorMessage
 import com.example.android.ui.components.progress.ProgressIndicator
 
-const val ROUTE_FEATURE_ONE = "feature_one"
-
 @Composable
 fun FeatureOneScreen(
     viewModel: ExampleViewModel,
