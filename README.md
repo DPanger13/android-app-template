@@ -76,7 +76,7 @@ tests are not just used for verification, but also regression, since they're run
 This project uses [Ktlint](https://github.com/JLLeitschuh/ktlint-gradle) as a source of truth for code formatting. It is integrated into the `check` task and runs during CI.
 See their documentation for useful Gradle tasks, like `:ktlintFormat` for auto-formatting and `:ktlintGenerateBaseline` for ignoring acceptable items.
 
-This project provides a basic GitHub Actions Workflow that runs the `check` Gradle task. This task compiles, lints, and tests the project on every push, which includes Pull
+This project provides a basic GitHub Actions Workflow that runs the `build` Gradle task. This task compiles, lints, and tests the project on every push, which includes Pull
 Requests.
 
 ## Convention Plugins
